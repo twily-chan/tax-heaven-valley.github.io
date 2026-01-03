@@ -35,7 +35,7 @@ try {
   // 4. Initialize temporary git repo
   // This "nuke and pave" approach avoids ENAMETOOLONG errors from gh-pages cleaning logic
   execSync('git init');
-  execSync('git checkout -b main');
+  execSync('git checkout -b gh-pages');
   
   // 5. Add all files
   console.log('📄 Adding files...');

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   return (
@@ -48,19 +49,19 @@ export const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center animate-fade-in-up delay-300 px-4">
-          <a 
-            href="#contact" 
-            className="group relative px-6 py-3 md:px-8 md:py-4 bg-lawyer-green text-paper-50 font-bold tracking-wide rounded overflow-hidden shadow-lg hover:shadow-lawyer-green/30 transition-all duration-300 text-sm md:text-base"
+          <Link 
+            to="/contact" 
+            className="group relative px-6 py-3 md:px-8 md:py-4 bg-lawyer-green text-paper-50 font-bold tracking-wide rounded overflow-hidden shadow-lg hover:shadow-lawyer-green/30 transition-all duration-300 text-sm md:text-base inline-block"
           >
             <span className="relative z-10">Consult With Me</span>
             <div className="absolute inset-0 h-full w-full bg-gold-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-          </a>
-          <a 
-            href="#services" 
-            className="px-6 py-3 md:px-8 md:py-4 border border-lawyer-green/40 text-lawyer-darkGreen font-bold tracking-wide rounded hover:bg-lawyer-green hover:text-paper-50 hover:border-transparent transition-all duration-300 text-sm md:text-base"
+          </Link>
+          <Link 
+            to="/expertise" 
+            className="px-6 py-3 md:px-8 md:py-4 border border-lawyer-green/40 text-lawyer-darkGreen font-bold tracking-wide rounded hover:bg-lawyer-green hover:text-paper-50 hover:border-transparent transition-all duration-300 text-sm md:text-base inline-block"
           >
             Explore My Expertise
-          </a>
+          </Link>
         </div>
       </div>
 

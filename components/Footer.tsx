@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -26,17 +27,17 @@ export const Footer: React.FC = () => {
           <div>
             <h5 className="text-paper-50 font-bold uppercase tracking-widest text-xs mb-4 md:mb-6">Expertise</h5>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Tax Controversy</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>International Tax</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Estate Planning</a></li>
+              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Tax Controversy</Link></li>
+              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>International Tax</Link></li>
+              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Estate Planning</Link></li>
             </ul>
           </div>
 
           <div>
             <h5 className="text-paper-50 font-bold uppercase tracking-widest text-xs mb-4 md:mb-6">Links</h5>
             <ul className="space-y-3 text-sm">
-              <li><a href="#about" className="hover:text-gold-500 transition-colors">About Nasir</a></li>
-              <li><a href="#contact" className="hover:text-gold-500 transition-colors">Contact</a></li>
+              <li><Link to="/about" className="hover:text-gold-500 transition-colors">About Nasir</Link></li>
+              <li><Link to="/contact" className="hover:text-gold-500 transition-colors">Contact</Link></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Client Portal</a></li>
             </ul>
           </div>
