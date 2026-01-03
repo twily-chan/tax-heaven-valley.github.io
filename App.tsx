@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -43,7 +43,7 @@ function App() {
       <Header />
       <main className="flex-grow">
         <Routes>
-          {/* Main Home Page - Contains everything */}
+          {/* Main Home Page */}
           <Route path="/" element={<Home />} />
           
           {/* Individual Pages */}
@@ -51,6 +51,9 @@ function App() {
           <Route path="/expertise" element={<PageWrapper><Services /></PageWrapper>} />
           <Route path="/testimonials" element={<PageWrapper><Testimonials /></PageWrapper>} />
           <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+
+          {/* Catch-all Route: If user types /taxfirm/unknown, redirect to Home or handle gracefully */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
