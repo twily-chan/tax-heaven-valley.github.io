@@ -4,24 +4,17 @@ import { Testimonial } from '../types';
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    author: "James Sterling",
-    role: "CEO",
-    company: "Sterling Ventures",
+    author: "Mst. Rashida Khatun",
+    role: "Doctor",
+    company: "Islami Bank Central Hospital",
     quote: "Nasir didn't just handle our tax case; he took ownership of it. His calm demeanor and strategic brilliance during the audit were invaluable.",
   },
   {
     id: 2,
-    author: "Dr. Sarah Chen",
-    role: "Private Investor",
-    company: "Family Office",
+    author: "Md. Tohidujjaman",
+    role: "Engineer",
+    company: "Siemens Healthineers",
     quote: "I was looking for a personal lawyer, not a faceless firm. Nasir Uddin Nayon provided the bespoke attention and expert counsel my estate planning required.",
-  },
-  {
-    id: 3,
-    author: "Marcus Thorne",
-    role: "Developer",
-    company: "Thorne Holdings",
-    quote: "Tax Heaven Valley is aptly named. Nasir navigated a complex liability issue that others couldn't solve. He is my go-to consultant for all tax matters.",
   }
 ];
 

@@ -28,8 +28,6 @@ export const Footer: React.FC = () => {
             <h5 className="text-paper-50 font-bold uppercase tracking-widest text-xs mb-4 md:mb-6">Expertise</h5>
             <ul className="space-y-3 text-sm">
               <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Tax Controversy</Link></li>
-              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>International Tax</Link></li>
-              <li><Link to="/contact" className="hover:text-gold-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>Estate Planning</Link></li>
             </ul>
           </div>
 
@@ -38,7 +36,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm">
               <li><Link to="/about" className="hover:text-gold-500 transition-colors">About Nasir</Link></li>
               <li><Link to="/contact" className="hover:text-gold-500 transition-colors">Contact</Link></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Client Portal</a></li>
             </ul>
           </div>
         </div>

@@ -22,13 +22,12 @@ export const Hero: React.FC = () => {
       <div className="relative z-20 container mx-auto px-6 pt-16 md:pt-20 text-center">
         
         {/* Logo/Icon Representation */}
-        <div className="mx-auto w-16 h-16 md:w-24 md:h-24 mb-6 md:mb-8 text-lawyer-green opacity-90 animate-fade-in-up">
-           <svg viewBox="0 0 100 100" fill="currentColor">
-             <path d="M50 10 L85 80 L15 80 Z" fill="none" stroke="currentColor" strokeWidth="3"/>
-             <path d="M50 25 L50 80" stroke="currentColor" strokeWidth="2"/>
-             <path d="M25 80 L25 50 L75 50 L75 80" fill="none" stroke="currentColor" strokeWidth="2"/>
-             <circle cx="50" cy="40" r="5" fill="currentColor" className="text-gold-500"/>
-           </svg>
+        <div className="mx-auto w-24 h-24 md:w-32 md:h-32 mb-6 md:mb-8 animate-fade-in-up">
+           <img 
+             src="/../img/icon.png" 
+             alt="Tax Heaven Valley Logo" 
+             className="w-full h-full object-contain drop-shadow-lg"
+           />
         </div>
 
         <div className="inline-block mb-6 px-3 py-1 md:px-4 md:py-1 border border-lawyer-green/30 rounded-full bg-lawyer-green/5 backdrop-blur-sm animate-fade-in-up">

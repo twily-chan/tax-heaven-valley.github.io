@@ -46,8 +46,12 @@ export const Header: React.FC = () => {
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <Link to="/" className="group flex items-center gap-3 relative z-50">
-            <div className={`w-8 h-8 md:w-10 md:h-10 border-2 rounded-full flex items-center justify-center transition-colors duration-300 ${showBackground ? 'border-lawyer-green text-lawyer-green' : 'border-lawyer-green bg-paper-50 text-lawyer-green'}`}>
-               <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L19.4 19H4.6L12 5.8zM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+            <div className={`w-8 h-8 md:w-10 md:h-10 border-2 rounded-full flex items-center justify-center transition-colors duration-300 overflow-hidden ${showBackground ? 'border-lawyer-green' : 'border-lawyer-green bg-paper-50'}`}>
+               <img 
+                 src="/../img/icon.png" 
+                 alt="Logo" 
+                 className="w-full h-full object-cover" 
+               />
             </div>
             <div>
               <h1 className="text-lg md:text-xl font-serif font-bold tracking-wide leading-none transition-colors duration-300 text-lawyer-green">

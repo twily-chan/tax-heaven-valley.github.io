@@ -7,7 +7,6 @@ import { Services } from './components/Services';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { AiAssistant } from './components/AiAssistant';
 
 // Helper to scroll to top on route change
 const ScrollToTop = () => {
@@ -57,7 +56,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <AiAssistant />
     </div>
   );
 }
