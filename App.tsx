@@ -42,8 +42,7 @@ function App() {
       <Header />
       <main className="flex-grow">
         <Routes>
-          {/* Main Home Page */}
-          <Route path="/" element={<Home />} />
+          {/* Main Home Page */}          <Route path="/" element={<Home />} />
           
           {/* Individual Pages */}
           <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
